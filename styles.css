@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #171a20;
+    font-family: 'M PLUS 1', sans-serif;
+}
+.desktop{
+    display: none;
+}
+@media(min-width: 1200px){
+    .desktop{
+        display: initial;
+    }
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+a.logo{
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}
+header a{
+    color: inherit;
+}
+header nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+header nav.center{
+    text-align: center;
+}
+header nav.right{
+    text-align: right;
+    
+}
+/* header end */
+
+/* =================================== */
+
+/* starting section */
+
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+section .content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+section h1{
+    font-size: 3rem;
+}
+section a{
+    color: inherit;
+}
+section .buttons a{
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+section .buttons a:first-child{
+    background-color: #444;
+    color: #fff;
+}
+section .buttons{
+    display: grid;
+    row-gap: 20px;
+    margin: 0 40px;
+}
+@media(min-width:768px){
+    section .buttons{
+        max-width: 640px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+       
+    }
+}
+/* end of section */
+
+/* ================================== */
+
+/* footer starting */
+
+
+.text-center{
+    font-size: 14px;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+/* footer end */
+
+/* ========================== */
+
+
+
+header nav.right a:hover{
+    background-color: #eee;
+    border-radius: 25px;
+    color: #444;
+}
+
+#hover a:hover{
+    background-color: #eee;
+    border-radius: 25px;
+    color: #444;
+
+}
+.menubr{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #eee;
+    padding-left: 15px;
+    height: 100vh;
+    padding-top: 60px;
+    z-index: 4;
+    width: 300px;
+    
+}
+li{
+    padding-top: 18px;
+    list-style: none;
+    display: block;
+    font-weight: 500;
+    
+}
+.menubtn{
+    background-color: transparent;
+    border-radius: 25px;
+    border-style: none;
+    color: #171a20;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.menubtn:hover{
+    background-color: #eee;
+    border-radius: 25px;
+    color: #444;
+}
+.closebtn{
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    border-style: none;
+    border-width: 20px;
+    border-radius: 25px;
+    width: 25px;
+}
+.closebtn:hover{
+    background-color: #444;
+    color: #eee;
+}
+li:hover{
+    background-color: rgb(203, 203, 203);
+    border-radius: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+
+
